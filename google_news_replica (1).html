@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitin Mathew - Professional Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            font-size: 13px;
+        }
+        
+
+        
+        .top-links {
+            font-size: 11px;
+        }
+        
+        .top-links a {
+            margin-right: 15px;
+            color: #00c;
+            text-decoration: underline;
+        }
+        
+        .top-links b {
+            margin-right: 15px;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 20px 0;
+            background: #fff;
+        }
+        
+        .logo {
+            font-size: 48px;
+            font-weight: normal;
+            margin-bottom: -10px;
+        }
+        
+        .logo .n1 { color: #4285f4; } /* Blue */
+        .logo .i1 { color: #ea4335; } /* Red */
+        .logo .t1 { color: #fbbc04; } /* Yellow */
+        .logo .i2 { color: #4285f4; } /* Blue */
+        .logo .n2 { color: #34a853; } /* Green */
+        
+        /* Mathew (Continued Sequence) */
+        .logo .m { color: #ea4335; }  /* Red (M from user's original CSS) */
+        .logo .a1 { color: #fbbc04; } /* Yellow */
+        .logo .t2 { color: #4285f4; } /* Blue */
+        .logo .h1 { color: #34a853; } /* Green */
+        .logo .e1 { color: #ea4335; } /* Red */
+        .logo .w1 { color: #fbbc04; } /* Yellow */
+        
+        .subtitle {
+            color: #666;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+        
+        .tagline {
+            text-align: center;
+            color: #666;
+            font-size: 11px;
+            margin: 10px 0;
+            padding: 0 20px;
+        }
+        
+        .tagline .red {
+            color: #d00;
+        }
+        
+        .nav-links {
+            text-align: right;
+            padding: 5px 15px;
+            font-size: 11px;
+            background: #f0f0f0;
+            border-bottom: 1px solid #c9d7f1;
+        }
+        
+        .container {
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        table.layout {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .sidebar {
+            width: 150px;
+            vertical-align: top;
+            padding: 10px;
+        }
+        
+        .sidebar-section {
+            background: #e5ecf9;
+            border: 1px solid #c9d7f1;
+            margin-bottom: 10px;
+        }
+        
+        .sidebar-header {
+            background: #c00;
+            color: #fff;
+            padding: 5px;
+            font-weight: bold;
+            font-size: 11px;
+        }
+        
+        .sidebar-item {
+            padding: 5px;
+            border-bottom: 1px solid #c9d7f1;
+            font-size: 11px;
+        }
+        
+        .sidebar-item a {
+            color: #00c;
+            text-decoration: none;
+        }
+        
+        .main-content {
+            vertical-align: top;
+            padding: 10px;
+        }
+        
+        .section-header {
+            font-weight: bold;
+            font-size: 16px;
+            margin: 10px 0;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #c9d7f1;
+        }
+        
+        .section-header select {
+            margin-left: 10px;
+            font-size: 11px;
+        }
+        
+        .section-header .time {
+            float: right;
+            font-size: 11px;
+            font-weight: normal;
+            color: #666;
+        }
+        
+        .story {
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e5ecf9;
+        }
+        
+        .story-title {
+            font-size: 14px;
+            font-weight: bold;
+            color: #00c;
+            margin-bottom: 3px;
+        }
+        
+        .story-title a {
+            color: #00c;
+            text-decoration: none;
+        }
+        
+        .story-meta {
+            color: #666;
+            font-size: 11px;
+            margin-bottom: 5px;
+        }
+        
+        .story-snippet {
+            font-size: 13px;
+            line-height: 1.4;
+            margin-bottom: 5px;
+        }
+        
+        .story-sources {
+            font-size: 11px;
+            color: #666;
+        }
+        
+        .story-sources a {
+            color: #00c;
+            margin-right: 10px;
+        }
+        
+        .right-sidebar {
+            width: 300px;
+            vertical-align: top;
+            padding: 10px;
+        }
+        
+        .personalize-box {
+            background: #e5ecf9;
+            border: 1px solid #c9d7f1;
+            padding: 10px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .side-story {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e5ecf9;
+        }
+        
+        .side-story-title {
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+        
+        .side-story-title a {
+            color: #00c;
+            text-decoration: none;
+        }
+        
+        .side-story-meta {
+            font-size: 11px;
+            color: #666;
+        }
+        
+        .section-box {
+            background: #f0f0f0;
+            border: 1px solid #c9d7f1;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .section-box-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .cert-badge {
+            background: #34a853;
+            color: #fff;
+            padding: 2px 6px;
+            font-size: 9px;
+            margin-left: 5px;
+        }
+        
+        .footer {
+            background: #f0f0f0;
+            border-top: 1px solid #c9d7f1;
+            padding: 15px;
+            text-align: center;
+            font-size: 11px;
+            color: #666;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="header">
+    <div class="logo">
+        <!-- Nitin -->
+        <span class="n1">N</span><span class="i1">i</span><span class="t1">t</span><span class="i2">i</span><span class="n2">n</span>
+        
+        <!-- Space -->
+        <span class="spacer"></span>
+
+        <!-- Mathew, with color applied to every character to complete the look -->
+        <span class="m">M</span><span class="a1">a</span><span class="t2">t</span><span class="h1">h</span><span class="e1">e</span><span class="w1">w</span>
+    </div>
+        <div class="subtitle"><b>Professional Portfolio</b></div>
+    </div>
+
+    <div class="tagline">
+        <span class="red">MANAGEMENT PROFESSIONAL | FINANCE EXPERT | BUSINESS LEADER</span>
+    </div>
+    
+    <div class="tagline">
+        Leveraging financial expertise and leadership to drive business performance and strategic growth
+    </div>
+
+    <div class="nav-links">
+        Email: nitinvettikombil@gmail.com | 
+        Phone: +91-8904732178 | 
+        Location: Kottayam, India
+    </div>
+
+    <div class="container">
+        <table class="layout">
+            <tr>
+                <td class="sidebar">
+                    <div class="sidebar-section">
+                        <div class="sidebar-header">▶ Quick Links</div>
+                        <div class="sidebar-item"><b><a href="#home">Home</a></b></div>
+                        <div class="sidebar-item"><b><a href="#experience">Experience</a></b></div>
+                        <div class="sidebar-item"><b><a href="#certifications">Certifications</a></b></div>
+                        <div class="sidebar-item"><b><a href="#expertise">Expertise</a></b></div>
+                        <div class="sidebar-item"><b><a href="#education">Education</a></b></div>
+                        <div class="sidebar-item"><b><a href="#blogs">Blogs</a></b></div>
+                        <div class="sidebar-item"><b><a href="#contact">Contact</a></b></div>
+                    </div>
+                    
+                  
+                </td>
+
+                <td class="main-content">
+                    <div class="section-header" id="experience">
+                        Professional Experience
+                        <span class="time">5+ years in finance</span>
+                    </div>
+
+                    <div class="story">
+                        <div class="story-title">Lead 1 - Business Finance</div>
+                        <div class="story-meta">US Technology International Pvt Ltd - <b>March 2023 - January 2025</b> - Bangalore, India</div>
+                        <div class="story-snippet">
+                            Managed a revenue portfolio of $150 million - which included Financial Review of upcoming and ongoing projects, playing an integral role in the global rolling Forecasting process and Management Reporting to business unit leaders for effective decision making.
+                        </div>
+                    </div>
+
+                    <div class="story">
+                        <div class="story-title">Deputy Manager - II</div>
+                        <div class="story-meta">ICICI BANK LTD - <b>May 2022 - March 2023</b> - Bangalore, India</div>
+                        <div class="story-snippet">
+                            Handled Front Office responsibilities in the Business Loans Division - which included identifying and onboarding potential customers in the small and medium enterprises segment and servicing them with a wide portfolio of Working Capital banking products such as Overdrafts, Bank Guarantees, Cash Credit and Term Loans.
+                        </div>
+                    </div>
+
+                    <div class="story">
+                        <div class="story-title">Manager - Finance</div>
+                        <div class="story-meta">K-12 Techno Services Pvt Ltd - <b>May 2021 - May 2022</b> - Bangalore, India</div>
+                        <div class="story-snippet">
+                            Handled a wide portfolio of responsibilities in Operational Finance in one of the largest EdTech Startups in the country - which included Budgetary Control of Operational and Capital Expenditure, Cash Flow Management, Accounts Payable, and Management Accounting responsibilities by leading a five member team.
+                        </div>
+                    </div>
+
+                    <div class="story">
+                        <div class="story-title">Portfolio Manager</div>
+                        <div class="story-meta">Proprietary Venture - <b>August 2017 - June 2019</b> - Bangalore, India</div>
+                        <div class="story-snippet">
+                            Actively managed a significant personal investment portfolio - by using multiple instruments like listed Indian stocks, stock futures and options and commodity and currency futures. Explored multiple styles of Investing like Value, Momentum, Macro-economic etc.
+                        </div>
+                    </div>
+
+                    <div class="story">
+                        <div class="story-title">Business Analyst</div>
+                        <div class="story-meta">State Street India Pvt Ltd - <b>August 2016 - August 2017</b> - Bangalore, India</div>
+                        <div class="story-snippet">
+                            Middle Office Operations in Performance Analytics Function - managed performance reporting deliverables/metrics for timeliness and quality. Supervision of captive back-office operations utilizing a thorough understanding of performance analytics methodology.
+                        </div>
+                    </div>
+
+                    <div class="section-box">
+                        <div class="section-box-title">Professional Summary</div>
+                        <div style="font-size: 11px;">Finance professional with 5+ years of experience in Business Finance, Investment Advisory, and Financial Planning</div>
+                    </div>
+
+                    <div class="section-header" id="certifications">
+                        Certifications & Credentials
+                    </div>
+
+                    <div class="story">
+                        <div class="story-title">
+                            NISM-Series-X-B: Investment Adviser (Level 2)
+                            <span class="cert-badge">ACTIVE</span>
+                        </div>
+                        <div class="story-meta">National Institute of Securities Markets (NISM) - <b>Issued Mar 2025 · Expires Mar 2028</b></div>
+                        <div class="story-snippet">
+                            Advanced certification in Investment Advisory Services, Financial Planning, and related skills.
+                        </div>
+                    </div>
+
+                    <div class="story">
+                        <div class="story-title">
+                            NISM-Series-X-A: Investment Adviser (Level 1)
+                            <span class="cert-badge">ACTIVE</span>
+                        </div>
+                        <div class="story-meta">National Institute of Securities Markets (NISM) - <b>Issued Feb 2025 · Expires Feb 2028</b></div>
+                        <div class="story-snippet">
+                            Foundation certification in Investment Advisory Services.
+                        </div>
+                    </div>
+
+                    <div class="story">
+                        <div class="story-title">BMC's Core Concepts</div>
+                        <div class="story-meta">Bloomberg - <b>Issued Nov 2019</b> - Credential ID: 156450709185</div>
+                        <div class="story-snippet">
+                            Bloomberg Market Concepts certification demonstrating proficiency in financial markets and tools.
+                        </div>
+                    </div>
+
+                    <div class="section-header" id="blogs">
+                        Published Articles & Blogs
+                    </div>
+
+                    <div class="story">
+                        <div class="story-title"><a href="https://www.linkedin.com/pulse/investment-horizon-problem-nitin-mathew--gdgyc/">Investment Horizon Problem</a></div>
+                        <div class="story-meta">Published on LinkedIn</div>
+                        <div class="story-snippet">
+                            Exploring the challenges and strategies for long-term investment planning in volatile markets.
+                        </div>
+                        <div class="story-sources">
+                            <a href="https://www.linkedin.com/pulse/investment-horizon-problem-nitin-mathew--gdgyc/">Read full article »</a>
+                        </div>
+                    </div>
+
+                    <div class="story">
+                        <div class="story-title"><a href="https://www.linkedin.com/pulse/counter-intuitive-manifestations-low-interest-rates-nitin-mathew-/">Counter-Intuitive Manifestations of Low Interest Rates</a></div>
+                        <div class="story-meta">Published on LinkedIn</div>
+                        <div class="story-snippet">
+                            Analyzing the unexpected effects of low interest rate environments on financial markets and investment strategies.
+                        </div>
+                        <div class="story-sources">
+                            <a href="https://www.linkedin.com/pulse/counter-intuitive-manifestations-low-interest-rates-nitin-mathew-/">Read full article »</a>
+                        </div>
+                    </div>
+
+                    <div class="story">
+                        <div class="story-title"><a href="#">Financial Planning Strategies for 2025</a></div>
+                        <div class="story-meta">January 2025</div>
+                        <div class="story-snippet">
+                            Explore comprehensive financial planning techniques and investment strategies to secure your future in the evolving market landscape.
+                        </div>
+                    </div>
+
+                    <div class="story">
+                        <div class="story-title"><a href="#">Investment Banking Trends</a></div>
+                        <div class="story-meta">December 2024</div>
+                        <div class="story-snippet">
+                            A deep dive into the latest trends shaping the investment banking industry and their impact on business finance.
+                        </div>
+                    </div>
+                </td>
+
+                <td class="right-sidebar">
+                    <div class="personalize-box" id="expertise">
+                        <a href="#expertise" style="color: #00c; text-decoration: none;">Core Expertise & Skills</a>
+                    </div>
+
+                    <div class="side-story">
+                        <div class="side-story-title">Financial Variance Analysis</div>
+                    </div>
+
+                    <div class="side-story">
+                        <div class="side-story-title">Investment Advisory Services</div>
+                    </div>
+
+                    <div class="side-story">
+                        <div class="side-story-title">Financial Planning</div>
+                    </div>
+
+                    <div class="side-story">
+                        <div class="side-story-title">Forecasting</div>
+                    </div>
+
+                    <div class="side-story">
+                        <div class="side-story-title">Budgeting</div>
+                    </div>
+
+                    <div class="side-story">
+                        <div class="side-story-title">Financial Reporting</div>
+                    </div>
+
+                    <div class="side-story">
+                        <div class="side-story-title">Corporate Finance</div>
+                    </div>
+
+                    <div class="side-story">
+                        <div class="side-story-title">Commercial Finance</div>
+                    </div>
+
+                    <div class="side-story">
+                        <div class="side-story-title">Managerial Finance</div>
+                    </div>
+
+                    <div class="side-story">
+                        <div class="side-story-title">Investment Management</div>
+                    </div>
+
+                    <div class="side-story">
+                        <div class="side-story-title">Financial Modeling</div>
+                    </div>
+
+                    <div class="side-story">
+                        <div class="side-story-title">Team Management</div>
+                    </div>
+
+                    <div class="section-box" id="education">
+                        <div class="section-box-title">Education</div>
+                        <div style="font-size: 11px; margin-bottom: 10px;">
+                            <b>MBA - Finance</b><br>
+                            T.A Pai Management Institute, Manipal<br>
+                            2019 - 2021
+                        </div>
+                        <div style="font-size: 11px; margin-bottom: 10px;">
+                            <b>B.Tech - Mechanical Engineering</b><br>
+                            Christ University, Bangalore<br>
+                            2012 - 2016
+                        </div>
+                        <div style="font-size: 11px; border-top: 1px solid #c9d7f1; padding-top: 8px;">
+                            <b>Languages:</b><br>
+                            English, Hindi, Malayalam, Kannada, Tamil
+                        </div>
+                    </div>
+
+                    <div class="section-box" id="contact">
+                        <div class="section-box-title">Contact Information</div>
+                        <div style="font-size: 11px; line-height: 1.6;">
+                            <b>Email:</b><br>
+                            <a href="mailto:nitinvettikombil@gmail.com">nitinvettikombil@gmail.com</a>
+                            <br><br>
+                            <b>Phone:</b><br>
+                            <a href="tel:+918904732178">+91-8904732178</a>
+                            <br><br>
+                            <b>Location:</b><br>
+                            Kottayam, India
+                            <br><br>
+                            <b>YouTube:</b><br>
+                            <a href="https://www.youtube.com/@NitinMathew1">@NitinMathew1</a>
+                        </div>
+                    </div>
+
+                    <div style="background: #f8f9fa; border: 1px solid #c9d7f1; padding: 10px; text-align: center; font-size: 11px; color: #666;">
+                        <b>5+ years of experience</b><br>
+                        in finance and management
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="footer">
+        <div>5+ years of experience in finance and management</div>
+        <div style="margin-top: 5px;"><b>NITIN MATHEW</b> © 2025</div>
+    </div>
+</body>
+</html>
